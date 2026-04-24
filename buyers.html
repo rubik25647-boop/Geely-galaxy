@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geely Galaxy — Покупателям</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-body">
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="Geely Galaxy" class="logo__svg" /></a>
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="index.html">Модели</a>
+          <div class="nav-dropdown">
+            <div class="nav-dropdown__grid">
+              <a href="model-ex5.html" class="nav-dropdown__item">
+                <img class="nav-dropdown__thumb" src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400&q=70" alt="EX5" />
+                <div class="nav-dropdown__info"><div class="nav-dropdown__name">Geely Galaxy EX5</div><div class="nav-dropdown__tag">Электро · SUV · от 12 990 000 ₸</div></div>
+              </a>
+              <a href="model-ex5-emi.html" class="nav-dropdown__item">
+                <img class="nav-dropdown__thumb" src="images/emi_p1_0.png" alt="EX5 EM-I" />
+                <div class="nav-dropdown__info"><div class="nav-dropdown__name">Geely Galaxy EX5 EM-I</div><div class="nav-dropdown__tag">Гибрид · SUV · от 13 490 000 ₸</div></div>
+              </a>
+              <a href="model-cityray.html" class="nav-dropdown__item">
+                <img class="nav-dropdown__thumb" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=70" alt="Cityray" />
+                <div class="nav-dropdown__info"><div class="nav-dropdown__name">Geely Galaxy Cityray</div><div class="nav-dropdown__tag">Электро · Хэтчбек · от 9 490 000 ₸</div></div>
+              </a>
+              <a href="model-preface.html" class="nav-dropdown__item">
+                <img class="nav-dropdown__thumb" src="images/preface_p1_0.png" alt="Preface" />
+                <div class="nav-dropdown__info"><div class="nav-dropdown__name">Geely Galaxy Preface</div><div class="nav-dropdown__tag">Гибрид · Седан · от 15 990 000 ₸</div></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="dealers.html">Дилеры</a>
+        <a href="offers.html">Спецпредложения</a><a href="owners.html">Владельцам</a>
+        <a href="buyers.html" class="active">Покупателям</a><a href="test-drive.html">Тест-драйв</a>
+      </nav>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Модели</a><a href="dealers.html">Дилеры</a>
+    <a href="offers.html">Спецпредложения</a><a href="owners.html">Владельцам</a>
+    <a href="buyers.html">Покупателям</a><a href="test-drive.html">Тест-драйв</a>
+  </div>
+
+  <div class="page-band">
+    <div class="container">
+      <h1 class="page-band__title">Покупателям</h1>
+      <p class="page-band__sub">Простой и удобный процесс покупки вашего Geely</p>
+    </div>
+  </div>
+
+  <!-- STEPS -->
+  <section class="section">
+    <div class="container">
+      <p class="section__eyebrow">Процесс</p>
+      <h2 class="section__title" style="margin-bottom:48px">Как купить Geely за 4 шага</h2>
+      <div class="buyers-steps">
+        <div class="step-card">
+          <div class="step-card__title">Выберите модель</div>
+          <p class="step-card__desc">Изучите линейку Geely Galaxy, сравните комплектации и найдите идеальный автомобиль для вас.</p>
+          <a href="index.html" class="btn btn--outline btn--sm" style="margin-top:16px">Смотреть модели</a>
+        </div>
+        <div class="step-card">
+          <div class="step-card__title">Тест-драйв</div>
+          <p class="step-card__desc">Запишитесь на бесплатный тест-драйв в ближайший дилерский центр и почувствуйте автомобиль.</p>
+          <a href="test-drive.html" class="btn btn--outline btn--sm" style="margin-top:16px">Записаться</a>
+        </div>
+        <div class="step-card">
+          <div class="step-card__title">Финансирование</div>
+          <p class="step-card__desc">Выберите удобный способ оплаты: наличные, автокредит от 0% или лизинг для юридических лиц.</p>
+          <a href="#finance" class="btn btn--outline btn--sm" style="margin-top:16px">Рассчитать</a>
+        </div>
+        <div class="step-card">
+          <div class="step-card__title">Получите авто</div>
+          <p class="step-card__desc">Подпишите договор, завершите оформление документов и получите ключи от вашего нового Geely!</p>
+          <a href="dealers.html" class="btn btn--outline btn--sm" style="margin-top:16px">Найти дилера</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINANCE -->
+  <section class="section section--gray" id="finance">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start">
+        <div>
+          <p class="section__eyebrow">Финансирование</p>
+          <h2 class="section__title">Выгодные условия покупки</h2>
+          <p class="section__desc">Мы сотрудничаем с ведущими банками Казахстана для предоставления лучших условий кредитования.</p>
+          <table class="finance-table">
+            <thead>
+              <tr><th>Банк</th><th>Ставка</th><th>Срок</th><th>Взнос</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Halyk Bank</td><td>0%</td><td>до 84 мес</td><td>от 20%</td></tr>
+              <tr><td>Kaspi Bank</td><td>5.5%</td><td>до 60 мес</td><td>от 10%</td></tr>
+              <tr><td>BCC Bank</td><td>7%</td><td>до 72 мес</td><td>от 15%</td></tr>
+              <tr><td>Geely Finance</td><td>4.9%</td><td>до 84 мес</td><td>от 20%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="background:#fff;border:1px solid var(--clr-border);border-radius:12px;padding:36px">
+          <h3 style="font-size:20px;font-weight:700;margin-bottom:24px">Калькулятор кредита</h3>
+          <div class="form-group">
+            <label style="font-size:13px;font-weight:600;color:var(--clr-muted)">Стоимость автомобиля</label>
+            <input type="number" id="price" value="12990000" />
+          </div>
+          <div class="form-group">
+            <label style="font-size:13px;font-weight:600;color:var(--clr-muted)">Первоначальный взнос (%)</label>
+            <input type="range" id="downRange" min="10" max="90" value="20" oninput="calcCredit()" style="width:100%;accent-color:var(--clr-accent)" />
+            <span id="downLabel" style="font-size:13px;color:var(--clr-muted)">20% = 2 598 000 ₸</span>
+          </div>
+          <div class="form-group">
+            <label style="font-size:13px;font-weight:600;color:var(--clr-muted)">Срок (месяцев)</label>
+            <select id="term" onchange="calcCredit()">
+              <option value="12">12 месяцев</option>
+              <option value="24">24 месяца</option>
+              <option value="36">36 месяцев</option>
+              <option value="48">48 месяцев</option>
+              <option value="60" selected>60 месяцев</option>
+              <option value="72">72 месяца</option>
+              <option value="84">84 месяца</option>
+            </select>
+          </div>
+          <div style="background:var(--clr-surface);border-radius:10px;padding:20px;text-align:center;margin-top:8px">
+            <div style="font-size:13px;color:var(--clr-muted)">Ежемесячный платёж</div>
+            <div id="monthlyPayment" style="font-size:36px;font-weight:800;color:var(--clr-accent);margin:8px 0">173 200 ₸</div>
+            <div style="font-size:12px;color:var(--clr-muted)">при ставке 0%</div>
+          </div>
+          <a href="test-drive.html" class="btn btn--primary btn--full" style="margin-top:20px">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRADE-IN -->
+  <section class="section">
+    <div class="container">
+      <div class="section__split section__split--rev">
+        <div>
+          <p class="section__eyebrow">Трейд-ин</p>
+          <h2 class="section__title">Обменяйте старый<br/>автомобиль на новый</h2>
+          <p class="section__desc">Примем любой автомобиль любой марки и года. Оценка за 15 минут прямо в дилерском центре. Дополнительный бонус 500 000 ₸ при трейд-ин на Geely.</p>
+          <ul style="list-style:none;margin-bottom:32px">
+            <li style="padding:10px 0;border-bottom:1px solid var(--clr-border);font-size:15px">✅ Любая марка и год выпуска</li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--clr-border);font-size:15px">✅ Оценка за 15 минут</li>
+            <li style="padding:10px 0;border-bottom:1px solid var(--clr-border);font-size:15px">✅ Бонус +500 000 ₸</li>
+            <li style="padding:10px 0;font-size:15px">✅ Переоформление документов бесплатно</li>
+          </ul>
+          <a href="dealers.html" class="btn btn--primary">Оценить мой автомобиль</a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Трейд-ин" style="width:100%;height:420px;object-fit:cover;border-radius:12px" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="index.html" class="logo"><img src="images/logo.svg" alt="Geely Galaxy" class="logo__svg" /></a><p>Официальный представитель Geely в Казахстане.</p></div>
+        <div class="footer__links">
+          <div class="footer__col"><h4>Модели</h4><a href="index.html">EX5</a><a href="index.html">EX8</a></div>
+          <div class="footer__col"><h4>Покупателям</h4><a href="buyers.html">Финансирование</a><a href="offers.html">Акции</a></div>
+          <div class="footer__col"><h4>Сервис</h4><a href="owners.html">Владельцам</a><a href="dealers.html">Дилеры</a></div>
+          <div class="footer__col"><h4>Компания</h4><a href="#">О нас</a><a href="#">Контакты</a></div>
+        </div>
+        <div class="footer__cta"><a href="test-drive.html" class="btn btn--primary btn--sm">Тест-драйв</a></div>
+      </div>
+      <div class="footer__bottom"><span>© 2024 Geely Galaxy Kazakhstan</span></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function calcCredit() {
+      const price = parseFloat(document.getElementById('price').value) || 12990000;
+      const down = parseFloat(document.getElementById('downRange').value) / 100;
+      const term = parseInt(document.getElementById('term').value);
+      const loan = price * (1 - down);
+      const monthly = Math.round(loan / term);
+      document.getElementById('monthlyPayment').textContent = monthly.toLocaleString('ru-RU') + ' ₸';
+      document.getElementById('downLabel').textContent = `${Math.round(down*100)}% = ${Math.round(price*down).toLocaleString('ru-RU')} ₸`;
+    }
+    document.getElementById('price').addEventListener('input', calcCredit);
+    calcCredit();
+  </script>
+</body>
+</html>
