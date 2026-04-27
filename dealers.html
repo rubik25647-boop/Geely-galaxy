@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Geely Galaxy — Дилеры в Казахстане</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body class="page-body">
 
@@ -412,13 +412,19 @@
         attribution: '© OpenStreetMap'
       }).addTo(map);
 
-      // Custom blue pin icon
+      // Custom cyan SVG pin icon
+      const pinSVG = `
+        <svg viewBox="0 0 30 42" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 0 C6.7 0 0 6.7 0 15 C0 26 15 42 15 42 C15 42 30 26 30 15 C30 6.7 23.3 0 15 0 Z"
+                fill="#00d4d4" stroke="#ffffff" stroke-width="2.5"/>
+          <circle cx="15" cy="15" r="5.5" fill="#ffffff"/>
+        </svg>`;
       const pinIcon = L.divIcon({
         className: 'dealer-pin',
-        html: '<div class="dealer-pin__inner"></div>',
-        iconSize: [28, 36],
-        iconAnchor: [14, 36],
-        popupAnchor: [0, -32]
+        html: pinSVG,
+        iconSize: [30, 42],
+        iconAnchor: [15, 42],
+        popupAnchor: [0, -38]
       });
 
       // Build markers — one per dealer
