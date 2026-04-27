@@ -666,7 +666,8 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   flex-direction: column;
 }
-.dealers-map iframe {
+.dealers-map iframe,
+.dealers-map #dealerMap {
   width: 100%;
   flex: 1;
   min-height: 540px;
@@ -680,6 +681,35 @@ a { text-decoration: none; color: inherit; }
   background: #f9f9f9;
   border-top: 1px solid var(--clr-border);
 }
+
+/* Custom Leaflet marker (blue Geely pin) */
+.dealer-pin { background: transparent; border: none; }
+.dealer-pin__inner {
+  width: 28px;
+  height: 28px;
+  border-radius: 50% 50% 50% 0;
+  background: #0056D6;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transform: rotate(-45deg);
+  position: relative;
+}
+.dealer-pin__inner::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 8px; height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.dealer-pin:hover .dealer-pin__inner {
+  background: #003a99;
+  transform: rotate(-45deg) scale(1.15);
+  transition: transform 0.18s;
+}
+.leaflet-popup-content-wrapper { border-radius: 10px; padding: 4px 6px; }
+.leaflet-popup-content { margin: 12px 14px; }
 
 /* ============================================================
    NEWS SECTION (index page)
